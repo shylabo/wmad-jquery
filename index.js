@@ -54,7 +54,7 @@ $().ready(() => {
       $('.card-container').append(card)
     })
   })
-})
 
-// =============== Section bottom =============== //
-// Daniel
+  // =============== Section bottom =============== //
+  // Daniel
+})
