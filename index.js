@@ -57,4 +57,22 @@ $().ready(() => {
 
   // =============== Section bottom =============== //
   // Daniel
-})
+  $("body").append(`<div id="box-1"></div>`)
+  $("body").append(`<div id="box-2"></div>`)
+  $("body").append(`<div id="box-3"></div>`)
+
+  $("#box-1")
+    .append(`<h2 id="heading-list-1">List 1</h2>`)
+    .append(`<ul id="list-1"></ul>`);
+
+  $("#list-1").append([
+      "<li>Mon - 20 °C</li>",
+      "<li>Tue - 23 °C</li>",
+      "<li>Wed - 28 °C</li>"
+    ])
+    .after(`<button id="button-1">Make Read</button>`);
+
+  $("#button-1").click(() => {
+    $("button").prevUntil("body").css({ color: 'red' })
+  });
+});
